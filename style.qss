@@ -1,0 +1,209 @@
+/* ======================================================
+   NGILERS - Premium Food App Stylesheet
+   ====================================================== */
+
+/* ===== GLOBAL ===== */
+* {
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+QMainWindow {
+    background-color: #f0f2f5;
+}
+
+/* ===== SIDEBAR ===== */
+QWidget#full_menu_widget {
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgb(255, 193, 7),
+        stop:0.5 rgb(255, 167, 38),
+        stop:1 rgb(245, 124, 0)
+    );
+    border-right: 1px solid rgba(0, 0, 0, 30);
+}
+
+QWidget#full_menu_widget QLabel {
+    color: white;
+    font-weight: bold;
+}
+
+QWidget#full_menu_widget QPushButton {
+    color: white;
+    text-align: left;
+    height: 60px;
+    border: none;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 8px 15px;
+    background-color: transparent;
+}
+
+QWidget#full_menu_widget QPushButton:hover {
+    background-color: rgba(255, 255, 255, 80);
+}
+
+QWidget#full_menu_widget QPushButton:checked {
+    background-color: rgba(255, 255, 255, 120);
+    font-weight: bold;
+    border-left: 3px solid white;
+}
+
+QWidget#full_menu_widget QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 50);
+}
+
+/* ===== EXIT BUTTON ===== */
+QPushButton#exit_btn_2 {
+    color: white;
+    text-align: left;
+    height: 60px;
+    border: none;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 8px 15px;
+    background-color: rgba(200, 50, 50, 80);
+}
+
+QPushButton#exit_btn_2:hover {
+    background-color: rgba(220, 50, 50, 160);
+}
+
+/* ===== TOP BAR ===== */
+QWidget#widget {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgb(150, 150, 110),
+        stop:1 rgb(180, 180, 140)
+    );
+    border-bottom: 2px solid rgba(0, 0, 0, 20);
+}
+
+QWidget#widget QLabel {
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+QWidget#widget QPushButton#change_btn {
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: transparent;
+}
+
+QWidget#widget QPushButton#change_btn:hover {
+    background-color: rgba(255, 255, 255, 80);
+}
+
+QWidget#widget QPushButton#change_btn:checked {
+    background-color: rgba(255, 255, 255, 50);
+}
+
+/* ===== STACKED WIDGET / CONTENT AREA ===== */
+QStackedWidget {
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+/* ===== CONTENT AREA WIDGET ===== */
+QWidget#widget_2 {
+    background-color: #fafafa;
+}
+
+/* ===== FOOD CARD BUTTONS (Dashboard) ===== */
+QWidget#widget_2 QPushButton {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+QWidget#widget_2 QPushButton:hover {
+    border: 2px solid rgb(255, 167, 38);
+    background-color: #fffdf5;
+}
+
+QWidget#widget_2 QPushButton:pressed {
+    background-color: #fff3e0;
+}
+
+/* ===== SEPARATOR WIDGETS ===== */
+QWidget#widget_5, QWidget#widget_6 {
+    background-color: #fafafa;
+}
+
+/* ===== LABELS (Food Detail Overlays) ===== */
+QWidget#widget_2 QLabel {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+}
+
+/* ===== BACK BUTTON IN DETAIL VIEW ===== */
+QPushButton#customers_btn_3 {
+    background-color: rgba(255, 167, 38, 200);
+    border-radius: 15px;
+    border: none;
+}
+
+QPushButton#customers_btn_3:hover {
+    background-color: rgba(255, 140, 0, 230);
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 8px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #c0c0c0;
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #a0a0a0;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #f0f0f0;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #c0c0c0;
+    border-radius: 4px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #a0a0a0;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* ===== TOOLTIP ===== */
+QToolTip {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
