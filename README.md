@@ -41,5 +41,4 @@ Aplikasi desktop berbasis **Python & PyQt5** yang dirancang untuk membantu pengg
 *   [Instagram](https://instagram.com/rdhoalfrd)
 *   [YouTube](https://youtube.com/@rdhoalfrd)
 
----
-© 2024 Muhammad Ridho Alfarod - Algoritma Pemrograman ITK
+
